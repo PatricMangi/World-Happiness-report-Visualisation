@@ -14,7 +14,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/2_symbol_map/data/earthquake.csv"
+        "url": "https://raw.githubusercontent.com/PatricMangi/DATA-VISUALISATION-2/main/archive%20(2)/MELBOURNE_HOUSE_PRICES_LESS.csv"
       },
       "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
