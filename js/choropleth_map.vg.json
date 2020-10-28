@@ -31,7 +31,7 @@
     "color": {
       "field": "Happiness Rank",
       "type": "quantitative",
-       "scale": {"domain": [0, 160]
+       "scale": {"domain": [1, 160]
       
     }
   },
