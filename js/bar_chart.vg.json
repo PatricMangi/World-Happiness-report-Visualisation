@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 500,
+  "height": 350,
+  "title": "Average Freedom",
+  "data": {
+    "url": "https://raw.githubusercontent.com/PatricMangi/DATA-VISUALISATION-2/main/data/2015.csv"
+  },
+  "params": [
+    {
+      "name": "Generosity_Score",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 1.5,
+        "step": 0.02,
+        "name": "Generosity Score: "
+      }
+    },
+    {
+      "name": "Region_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Australia and New Zealand",
+          "Western Europe",
+          "Central and Eastern Europe",
+          "North America",
+          "Latin America and Caribbean",
+          "Middle East and Northern Africa",
+          "Sub-Saharan Africa",
+          "Southeastern Asia",
+          "Eastern Asia"
+        ],
+        "labels": [
+          "Show All",
+          "Australia and New Zealand",
+          "Western Europe",
+          "Central and Eastern Europe",
+          "North America",
+          "Latin America and Caribbean",
+          "Middle East and Northern Africa",
+          "Sub-Saharan Africa",
+          "Southeastern Asia",
+          "Eastern Asia"
+        ],
+        "name": "Region Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "Region_selection == null || datum.Region == Region_selection"},
+    {"filter": "datum.Generosity > Generosity_Score"},
+    {
+      "aggregate": [
+        {"op": "average", "field": "Freedom", "as": "mean_freedom"}
+      ],
+      "groupby": ["Region"]
+    }
+  ],
+  "encoding": {
+    "x": {"field": "Region", "type": "ordinal"},
+    "y": {"field": "mean_freedom", "type": "quantitative"}
+  },
+  "layer": [
+    {"mark": "bar"},
+    {
+      "mark": {
+        "type": "text",
+        "tooltip": true,
+        "baseline": "line-bottom",
+        "dx": 3
+      },
+      "encoding": {"text": {"field": "mean_freedom", "type": "quantitative"}}
+    }
+  ],
+  "config": {}
+}
