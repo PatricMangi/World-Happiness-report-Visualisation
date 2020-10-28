@@ -1,0 +1,112 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 500,
+  "height": 400,
+  "title": "Economy (GDP per Capita) - 2015",
+  "data": {
+    "url": "https://raw.githubusercontent.com/PatricMangi/DATA-VISUALISATION-2/main/data/2015.csv"
+  },
+  "params": [
+    {
+      "name": "Region_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Australia and New Zealand",
+          "Western Europe",
+          "Central and Eastern Europe",
+          "North America",
+          "Latin America and Caribbean",
+          "Middle East and Northern Africa",
+          "Sub-Saharan Africa",
+          "Southeastern Asia",
+          "Eastern Asia"
+        ],
+        "labels": [
+          "Show All",
+          "Australia and New Zealand",
+          "Western Europe",
+          "Central and Eastern Europe",
+          "North America",
+          "Latin America and Caribbean",
+          "Middle East and Northern Africa",
+          "Sub-Saharan Africa",
+          "Southeastern Asia",
+          "Eastern Asia"
+        ],
+        "name": "Region Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {"filter": "Region_selection == null || datum.Region == Region_selection"}
+  ],
+  "selection": {
+    "Region_highlight": {
+      "type": "multi",
+      "fields": ["Region"],
+      "bind": "legend"
+    }
+  },
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "Health (Life Expectancy)",
+      "type": "quantitative",
+      "title": "Life Expectancy"
+    },
+    "y": {"field": "Economy (GDP per Capita)", "type": "quantitative"},
+    "color": {
+      "field": "Region",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Australia and New Zealand",
+          "Western Europe",
+          "Central and Eastern Europe",
+          "North America",
+          "Latin America and Caribbean",
+          "Middle East and Northern Africa",
+          "Sub-Saharan Africa",
+          "Southeastern Asia",
+          "Eastern Asia"
+        ],
+        "range": [
+          "#e41a1c",
+          "#984ea3",
+          "#ff7f00",
+          "#a6cee3",
+          "#377eb8",
+          "#a65628"
+        ]
+      }
+    },
+    "opacity": {
+      "condition": {"selection": "Region_highlight", "value": 0.6},
+      "value": 0.2
+    },
+    "size": {
+      "field": "Happiness Score",
+      "type": "quantitative",
+      "legend": {"format": ".1s"}
+    },
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {"field": "Happiness Score", "type": "quantitative", "format": ","},
+      {"field": "Happiness Rank", "type": "quantitative", "format": ","},
+      {
+        "field": "Health (Life Expectancy)",
+        "type": "quantitative",
+        "format": ","
+      },
+      {
+        "field": "Economy (GDP per Capita)",
+        "type": "quantitative",
+        "format": ","
+      },
+      {}
+    ]
+  },
+  "config": {}
+}
