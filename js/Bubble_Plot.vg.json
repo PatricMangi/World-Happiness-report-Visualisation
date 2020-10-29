@@ -94,7 +94,7 @@
     "tooltip": [
       {"field": "Country", "type": "nominal"},
       {"field": "Happiness Score", "type": "quantitative", "format": ","},
-      {"field": "Happiness Rank", "type": "quantitative", "format": ","},
+      {"field": "HappinessRank", "type": "quantitative", "format": ","},
       {
         "field": "Health (Life Expectancy)",
         "type": "quantitative",
