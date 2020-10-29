@@ -19,6 +19,12 @@
         //min-height: 170px;
         //box-sizing: border-box;
     }
+ .nav2 {
+        float: right; 
+        //padding: 20px;
+        //min-height: 170px;
+        //box-sizing: border-box;
+    }
     .nav {            
         width: 20%;             
         //background: #d4d7dc;
