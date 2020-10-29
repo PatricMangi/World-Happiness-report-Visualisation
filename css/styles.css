@@ -18,6 +18,15 @@
 	*height: 1000px;
 	width: 800px;*
 }
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
 body{
     font-family: 'Source Sans Pro', sans-serif;
 }
