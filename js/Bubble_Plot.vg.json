@@ -14,26 +14,29 @@
         "options": [
           null,
           "Australia and New Zealand",
-          "Western Europe",
           "Central and Eastern Europe",
-          "North America",
+          "Eastern Asia",
           "Latin America and Caribbean",
-          "Middle East and Northern Africa",
-          "Sub-Saharan Africa",
+           "Middle East and Northern Africa",
+          "North America",
           "Southeastern Asia",
-          "Eastern Asia"
+          "Southern Asia",
+          "Sub-Saharan Africa",
+          "Western Europe"
+          
+          
         ],
         "labels": [
-          "Show All",
-          "Australia and New Zealand",
-          "Western Europe",
+         "Australia and New Zealand",
           "Central and Eastern Europe",
-          "North America",
+          "Eastern Asia",
           "Latin America and Caribbean",
-          "Middle East and Northern Africa",
-          "Sub-Saharan Africa",
+           "Middle East and Northern Africa",
+          "North America",
           "Southeastern Asia",
-          "Eastern Asia"
+          "Southern Asia",
+          "Sub-Saharan Africa",
+          "Western Europe"
         ],
         "name": "Region Selection: "
       }
