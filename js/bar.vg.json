@@ -9,7 +9,7 @@
     "Happiness Score",
     "Freedom"
   ],
-  "columns": 4,
+  "columns": 2,
   "spec": {
     "data": {
       "url": "https://raw.githubusercontent.com/PatricMangi/DATA-VISUALISATION-2/main/data/2015.csv"
