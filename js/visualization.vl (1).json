@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "repeat": [
+    "Trust (Government Corruption)",
+    "Generosity",
+    "Happiness Score",
+    "Freedom"
+  ],
+  "columns": 2,
+  "spec": {
+    "data": {
+      "url": "https://raw.githubusercontent.com/PatricMangi/DATA-VISUALISATION-2/main/data/2015.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+      "x": {"field": {"repeat": "repeat"}, "bin": true},
+      "y": {"aggregate": "count"},
+      "color": {"field": "Region"}
+    }
+  },
+  "config": {}
+}
