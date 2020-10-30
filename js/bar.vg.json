@@ -18,7 +18,7 @@
     "encoding": {
       "x": {"field": {"repeat": "repeat"}, "bin": true},
       "y": {"aggregate": "count"},
-      "color": {"field": "Region"},
+      "color": {"field": "Region","legend": null},
        "tooltip": [
       {"field": "Region", "type": "nominal", "title": "Region"}
     ]
