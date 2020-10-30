@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "World Happiness Ranking",
-  "width": 800,
-  "height": 600,
+  "width": 600,
+  "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
@@ -25,7 +25,7 @@
     "color": {
       "field": "HappinessRank",
       "type": "quantitative",
-      "scale": {"domain":[0,170]}
+      "scale": {"domain": [0, 170]}
     },
     "tooltip": [
       {"field": "properties.NAME", "type": "nominal", "title": "Country"},
