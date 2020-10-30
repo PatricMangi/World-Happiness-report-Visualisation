@@ -1,5 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "title": " Trust,Generosity,Freedom and Happiness score ",
+
+  "width": 500,
+  "height": 400,
   "repeat": [
     "Trust (Government Corruption)",
     "Generosity",
