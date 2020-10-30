@@ -1,12 +1,15 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+   "title": " Trust,Generosity ,Happiness and freedom in world region ",
+  "width": 600,
+  "height": 500,
   "repeat": [
     "Trust (Government Corruption)",
     "Generosity",
     "Happiness Score",
     "Freedom"
   ],
-  "columns": 2,
+  "columns": 4,
   "spec": {
     "data": {
       "url": "https://raw.githubusercontent.com/PatricMangi/DATA-VISUALISATION-2/main/data/2015.csv"
