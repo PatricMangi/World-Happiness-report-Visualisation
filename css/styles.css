@@ -1,10 +1,12 @@
 
 
-
+boxes{
+ width:450px:
+   overflow:auto;
+}
 div {
   float: right;
-  height: 370px;
-  width: 43%;
+  width: 150px; height: 100px;
 }
 #column2{
  text-align: center;
