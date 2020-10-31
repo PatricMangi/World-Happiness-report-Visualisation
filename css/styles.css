@@ -3,11 +3,7 @@
         width:48%; height:200px; margin:4px; border:1px solid black; float: left
     }
 
-div {
-  float: right;
-  height: 470px;
-  width: 48%;
-}
+
 #column2{
  text-align: center;
 }
