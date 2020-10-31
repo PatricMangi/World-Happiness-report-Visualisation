@@ -1,17 +1,11 @@
-#boxes {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 div {
-  float: left;
+  float: right;
   height: 470px;
-  width: 23%;
-  padding: 0 10px;
+  width: 43%;
+ 
 }
-
-
 
 h2 {
   color: #000000;
