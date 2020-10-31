@@ -9,6 +9,7 @@
 div {
   float: right;
   height: 400px;
+  width:100px;
 }
 #column2{
  text-align: center;
