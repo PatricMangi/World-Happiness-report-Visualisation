@@ -1,1 +1,19 @@
-//
+#boxes {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div {
+  float: left;
+  height: 470px;
+  width: 23%;
+  padding: 0 10px;
+}
+
+
+
+h2 {
+  color: #000000;
+  text-align: center;
+}
