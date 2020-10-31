@@ -9,6 +9,9 @@ div {
   width: 100%;
   position:relative;
 }
+#column2{
+ text-align: center;
+}
 
 h1 {
   color: #000000;
