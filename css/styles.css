@@ -1,7 +1,11 @@
 
-.divsquare{
-        width:48%; height:470px; margin:4px; float: right
-    }
+
+div {
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin:8px;
+}
 
 
 #column2{
