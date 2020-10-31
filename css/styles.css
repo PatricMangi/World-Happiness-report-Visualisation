@@ -1,15 +1,10 @@
 
-*{
- margin:0;
- padding:0;
-}
 
 
 div {
   float: right;
   height: 470px;
   width: 100%;
-  position:relative;
 }
 #column2{
  text-align: center;
