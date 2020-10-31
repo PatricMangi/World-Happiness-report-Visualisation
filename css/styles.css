@@ -1,9 +1,12 @@
 
-
+*{
+ margin:0;
+ padding:0;
+}
 div {
   float: right;
   height: 470px;
-  width: 43%;
+  width: 100%;
  
 }
 
