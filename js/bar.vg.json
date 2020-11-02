@@ -1,8 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": " Trust,Generosity ,Happiness and freedom in world region ",
-  "width": 1000,
-  "height": 500,
+  "title": " Trust,Generosity ,Happiness and freedom in the world  ",
+
   "repeat": [
     "Trust (Government Corruption)",
     "Generosity",
@@ -19,7 +18,11 @@
       "x": {"field": {"repeat": "repeat"}, "bin": true},
       "y": {"aggregate": "count"},
       "color": {"field": "Region"},
-      "tooltip": [{"field": "Region", "type": "nominal", "title": "Region"}]
+      "tooltip": [{"field": "Region", "type": "nominal", "title": "Region"},
+       {"field": "HappinessRank", "type": "quantitative"},
+        {"field": "Freedom", "type": "quantitative"},
+         {"field": "Trust (Government Corruption)", "type": "quantitative"},
+         {"field": "Generosity", "type": "quantitative"}]
     }
   },
   "config": {}
