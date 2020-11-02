@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": " Trust,Generosity ,Happiness and freedom in the world  ",
+    "width": 1000,
+  "height": 600,
 
   "repeat": [
     "Trust (Government Corruption)",
